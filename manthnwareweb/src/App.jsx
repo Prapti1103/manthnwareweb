@@ -1,3 +1,5 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 import Navbar from "./components/layout/Navbar";
 import Footer from "./components/layout/Footer";
 
@@ -9,10 +11,13 @@ import Features from "./components/home/Features";
 import DiscoverMore from "./components/home/DiscoverMore";
 import Contact from "./components/home/Contact";
 
-function App() {
+import StudentLogin from "./components/pages/login/studentlogin";
+import SchoolLogin from "./components/pages/login/schoollogin";
+import CoordinatorLogin from "./components/pages/login/coordinator";
+
+function Home() {
   return (
     <>
-      <Navbar />
       <Hero />
       <ResultSection />
       <HowToGuide />
@@ -20,8 +25,25 @@ function App() {
       <Features />
       <DiscoverMore />
       <Contact />
-      <Footer />
     </>
+  );
+}
+
+function App() {
+  return (
+    <BrowserRouter>
+      <Navbar />
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+
+        <Route path="/studentlogin" element={<StudentLogin />} />
+        <Route path="/schoollogin" element={<SchoolLogin />} />
+        <Route path="/coordinatorlogin" element={<CoordinatorLogin />} />
+      </Routes>
+
+      <Footer />
+    </BrowserRouter>
   );
 }
 
