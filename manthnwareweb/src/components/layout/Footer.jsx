@@ -1,5 +1,14 @@
 import React from "react";
-import "../home/Home CSS/Footer.css";
+import { Link } from "react-router-dom";
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaYoutube,
+  FaLinkedinIn,
+  FaMapMarkerAlt,
+  FaPhoneAlt,
+  FaEnvelope,
+} from "react-icons/fa";
 
 const quickLinks = [
   { name: "Home", link: "/" },
@@ -19,151 +28,206 @@ const programs = [
 
 const socialLinks = [
   {
-    icon: "bi bi-facebook",
+    icon: <FaFacebookF />,
     link: "#",
   },
   {
-    icon: "bi bi-instagram",
+    icon: <FaInstagram />,
     link: "#",
   },
   {
-    icon: "bi bi-youtube",
+    icon: <FaYoutube />,
     link: "#",
   },
   {
-    icon: "bi bi-linkedin",
+    icon: <FaLinkedinIn />,
     link: "#",
   },
 ];
 
 const Footer = () => {
   return (
-    <>
-      <footer className="footer-section">
+    <footer className="bg-[#0d2c54] text-white pt-16 pb-6">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8">
 
-        <div className="container">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
 
-          <div className="row gy-5">
+          {/* About */}
 
-            {/* About */}
+          <div>
 
-            <div className="col-lg-4 col-md-6">
+            <h3 className="text-3xl font-bold mb-5">
+              Sankalp Welfare Foundation
+            </h3>
 
-              <h3 className="footer-logo">
-                Sankalpa Welfare Foundation
-              </h3>
+            <p className="text-gray-300 leading-8 text-justify">
+              Sankalp Welfare Foundation is committed to empowering society
+              through education, scholarships, social awareness and community
+              development initiatives.
+            </p>
 
-              <p className="footer-about">
-               Sankalpa Welfare Foundation is committed to empowering society
-                through education, scholarships, social awareness, and
-                community development initiatives.
-              </p>
+            <div className="flex gap-3 mt-7">
 
-              <div className="social-icons">
+              {socialLinks.map((item, index) => (
 
-                {socialLinks.map((item, index) => (
-                  <a
-                    key={index}
-                    href={item.link}
-                    target="_blank"
-                    rel="noreferrer"
+                <a
+                  key={index}
+                  href={item.link}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="
+                  w-11
+                  h-11
+                  rounded-full
+                  bg-white/10
+                  flex
+                  items-center
+                  justify-center
+                  hover:bg-[#ffc107]
+                  hover:text-black
+                  transition-all
+                  duration-300
+                  hover:-translate-y-1
+                "
+                >
+                  {item.icon}
+                </a>
+
+              ))}
+
+            </div>
+
+          </div>
+                    {/* Quick Links */}
+
+          <div>
+
+            <h5 className="text-xl font-semibold relative inline-block mb-8 after:content-[''] after:absolute after:left-0 after:-bottom-2 after:w-14 after:h-[3px] after:bg-[#ffc107]">
+              Quick Links
+            </h5>
+
+            <ul className="space-y-3">
+
+              {quickLinks.map((item, index) => (
+
+                <li key={index}>
+
+                  <Link
+                    to={item.link}
+                    className="
+                      text-gray-300
+                      hover:text-[#ffc107]
+                      hover:pl-2
+                      transition-all
+                      duration-300
+                    "
                   >
-                    <i className={item.icon}></i>
-                  </a>
-                ))}
+                    {item.name}
+                  </Link>
+
+                </li>
+
+              ))}
+
+            </ul>
+
+          </div>
+
+          {/* Programs */}
+
+          <div>
+
+            <h5 className="text-xl font-semibold relative inline-block mb-8 after:content-[''] after:absolute after:left-0 after:-bottom-2 after:w-14 after:h-[3px] after:bg-[#ffc107]">
+              Programs
+            </h5>
+
+            <ul className="space-y-3">
+
+              {programs.map((item, index) => (
+
+                <li key={index}>
+
+                  <Link
+                    to="/"
+                    className="
+                      text-gray-300
+                      hover:text-[#ffc107]
+                      hover:pl-2
+                      transition-all
+                      duration-300
+                    "
+                  >
+                    {item}
+                  </Link>
+
+                </li>
+
+              ))}
+
+            </ul>
+
+          </div>
+
+          {/* Contact */}
+
+          <div>
+
+            <h5 className="text-xl font-semibold relative inline-block mb-8 after:content-[''] after:absolute after:left-0 after:-bottom-2 after:w-14 after:h-[3px] after:bg-[#ffc107]">
+              Contact Us
+            </h5>
+
+            <div className="space-y-5 text-gray-300">
+
+              <div className="flex items-start gap-3">
+                <FaMapMarkerAlt className="text-[#ffc107] mt-1 shrink-0" />
+
+                <p className="leading-7">
+                  B5, Karan Court,
+                  <br />
+                  Ahilyanagar,
+                  <br />
+                  Maharashtra - 414001
+                </p>
+
+              </div>
+
+              <div className="flex items-center gap-3">
+                <FaPhoneAlt className="text-[#ffc107]" />
+
+                <p>+91 9130093832</p>
+
+              </div>
+
+              <div className="flex items-center gap-3">
+
+                <FaEnvelope className="text-[#ffc107]" />
+
+                <p>
+                  info@sankalpawelfarefoundation.org
+                </p>
 
               </div>
 
             </div>
 
-            {/* Quick Links */}
-
-            <div className="col-lg-2 col-md-6">
-
-              <h5>Quick Links</h5>
-
-              <ul>
-
-                {quickLinks.map((item, index) => (
-
-                  <li key={index}>
-                    <a href={item.link}>{item.name}</a>
-                  </li>
-
-                ))}
-
-              </ul>
-
-            </div>
-
-            {/* Programs */}
-
-            <div className="col-lg-3 col-md-6">
-
-              <h5>Programs</h5>
-
-              <ul>
-
-                {programs.map((item, index) => (
-
-                  <li key={index}>
-                    <a href="/">{item}</a>
-                  </li>
-
-                ))}
-
-              </ul>
-
-            </div>
-
-            {/* Contact */}
-
-            <div className="col-lg-3 col-md-6">
-
-              <h5>Contact Us</h5>
-
-              <p>
-                <i className="bi bi-geo-alt-fill"></i>
-
-                B5, Karan Court,
-                Ahilyanagar,
-                Maharashtra - 414001
-
-              </p>
-
-              <p>
-                <i className="bi bi-telephone-fill"></i>
-
-                +91 9130093832
-
-              </p>
-
-              <p>
-                <i className="bi bi-envelope-fill"></i>
-
-                info@Sankalpawelfarefoundation.org
-
-              </p>
-
-            </div>
-
-          </div>
-
-          <hr />
-
-          <div className="footer-bottom">
-
-            <p>
-              © {new Date().getFullYear()} Sankalpa Welfare Foundation. All
-              Rights Reserved.
-            </p>
-
           </div>
 
         </div>
 
-      </footer>
-    </>
+        <div className="border-t border-white/20 mt-12 pt-6">
+
+          <p className="text-center text-gray-300 text-sm">
+
+            © {new Date().getFullYear()} Sankalpa Welfare Foundation.
+            All Rights Reserved.
+
+          </p>
+
+        </div>
+
+      </div>
+
+    </footer>
   );
 };
 

@@ -17,7 +17,7 @@ const About = () => {
           <div className="mx-auto mt-5 h-[2px] w-[110px] bg-[#d6a223]" />
 
           <p className="mt-8 text-[28px] text-[#222]">
-            Manthan Welfare Foundation
+            Sankalp Welfare Foundation
           </p>
 
         </div>
@@ -39,7 +39,7 @@ const About = () => {
             <div className="mt-12 space-y-10 text-[23px] leading-[48px] text-[#444]">
 
               <p>
-                At Manthan Welfare Foundation, we believe that education is the
+                At sankalp Welfare Foundation, we believe that education is the
                 key to unlocking the potential of every individual and empowering
                 them to create a better future for themselves and their
                 communities.

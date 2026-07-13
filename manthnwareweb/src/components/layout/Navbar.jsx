@@ -62,11 +62,11 @@ const menuItems = [
     title: "About",
     submenu: [
       {
-        title: "Vision of Manthan Welfare Foundation",
+        title: "Vision of sankalp Welfare Foundation",
         link: "/vision",
       },
       {
-        title: "Values of Manthan Welfare Foundation",
+        title: "Values of sankalp Welfare Foundation",
         link: "/values",
       },
     ],
@@ -96,11 +96,11 @@ const menuItems = [
     title: "Downloads",
     submenu: [
       {
-  title: "Manthan-MGKE-Brochure (मराठी)",
+  title: "sankalp-MGKE-Brochure (मराठी)",
   link: "/brochure-marathi",
 },
 {
-  title: "Manthan-MGKE-Brochure (English)",
+  title: "sankalp-MGKE-Brochure (English)",
   link: "/brochure-english",
 },
 {

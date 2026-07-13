@@ -38,7 +38,7 @@ const Hero = () => {
           {/* Hero Image */}
           <img
             src={heroImage}
-            alt="Manthan Hero"
+            alt="sankalp Hero"
             className="w-[590px] object-contain select-none"
             draggable="false"
           />
@@ -53,7 +53,7 @@ const Hero = () => {
           </p>
 
           <h1 className="text-[40px] font-bold uppercase leading-[72px] text-[#0058a5]">
-            MANTHAN STATE LEVEL GENERAL
+            sankalp STATE LEVEL GENERAL
             <br />
             KNOWLEDGE EXAMINATION
           </h1>

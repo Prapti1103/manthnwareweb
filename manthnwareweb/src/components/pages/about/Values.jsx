@@ -36,13 +36,13 @@ const Values = () => {
         {/* Heading */}
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold text-[#0E4C92]">
-            Values of Manthan Welfare Foundation
+            Values of sankalp Welfare Foundation
           </h1>
 
           <div className="w-24 h-1 bg-[#f4a51c] mx-auto mt-4 rounded-full"></div>
 
           <p className="mt-6 text-lg text-gray-600 leading-8 max-w-5xl mx-auto">
-            At Manthan Welfare Foundation, our work is guided by a strong set of
+            At sankalp Welfare Foundation, our work is guided by a strong set of
             values that reflect our commitment to excellence, equity,
             integrity, innovation, and collaboration. These values provide the
             foundation for our mission of promoting education and creating equal
@@ -75,7 +75,7 @@ const Values = () => {
           </h2>
 
           <p className="text-lg leading-8">
-            We are proud of the values that define Manthan Welfare Foundation.
+            We are proud of the values that define sankalp Welfare Foundation.
             They inspire every initiative we undertake and every student we
             support. If you share these values and would like to contribute to
             our mission, we invite you to join us in creating a brighter future

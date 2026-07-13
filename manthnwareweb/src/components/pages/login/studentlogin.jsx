@@ -31,14 +31,14 @@ const Studentlogin = () => {
         <div className="flex justify-center">
           <img
             src={logo}
-            alt="Manthan Welfare Foundation"
+            alt="sankalp Welfare Foundation"
             className="w-32 h-auto"
           />
         </div>
 
         {/* Heading */}
         <h2 className="text-[18px] text-center text-gray-700 mt-5">
-          Manthan Welfare Foundation
+          sankalp Welfare Foundation
         </h2>
 
         <h3 className="text-[18px] text-center text-gray-700 mb-8">

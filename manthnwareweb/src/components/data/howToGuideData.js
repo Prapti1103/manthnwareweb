@@ -3,10 +3,10 @@ export const guideCards = [
     title: "Announcement 2023 State Level Prize Distribution ceremony",
   },
   {
-    title: "How to check Manthan General Knowledge Examination Result 2025",
+    title: "How to check sankalp General Knowledge Examination Result 2025",
   },
   {
-    title: "Manthan General Knowledge Examination 2025 Answer key.",
+    title: "Sankalp General Knowledge Examination 2025 Answer key.",
   },
 ];
 

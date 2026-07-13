@@ -8,13 +8,13 @@ const Vision = () => {
         {/* Heading */}
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold text-[#0E4C92]">
-            Vision of Manthan Welfare Foundation
+            Vision of sankalp Welfare Foundation
           </h1>
 
           <div className="w-24 h-1 bg-[#f4a51c] mx-auto mt-4 rounded-full"></div>
 
           <p className="mt-6 text-gray-600 text-lg leading-8 max-w-5xl mx-auto">
-            At Manthan Welfare Foundation, our vision is to create a world where
+            At sankalp Welfare Foundation, our vision is to create a world where
             every student has access to high-quality education and the resources
             they need to succeed, regardless of their background or
             circumstances. We believe that education is a fundamental right, and
@@ -100,7 +100,7 @@ const Vision = () => {
           </h2>
 
           <p className="leading-8 text-lg">
-            We are proud of our vision at Manthan Welfare Foundation and remain
+            We are proud of our vision at sankalp Welfare Foundation and remain
             dedicated to achieving it every day. If you share our vision and
             would like to contribute, we warmly welcome your support. Together,
             we can create a brighter future where every child receives the

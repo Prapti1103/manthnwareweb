@@ -30,13 +30,13 @@ const Schoollogin = () => {
         <div className="flex justify-center">
           <img
             src={logo}
-            alt="Manthan Welfare Foundation"
+            alt="sankalp Welfare Foundation"
             className="w-32"
           />
         </div>
 
         <h2 className="text-center text-[18px] mt-5 text-gray-700">
-          Manthan Welfare Foundation
+          sankalp Welfare Foundation
         </h2>
 
         <h3 className="text-center text-[18px] mb-8 text-gray-700">

@@ -2,7 +2,7 @@ const featuresData = [
   {
     title: "Develop critical thinking skills",
     content:
-      "At Manthan Welfare Foundation, we believe that critical thinking skills are essential for success in today's rapidly changing world. Students develop analytical abilities, creativity and practical problem-solving skills through our examinations.",
+      "At sankalp Welfare Foundation, we believe that critical thinking skills are essential for success in today's rapidly changing world. Students develop analytical abilities, creativity and practical problem-solving skills through our examinations.",
   },
   {
     title: "Broaden knowledge horizons",

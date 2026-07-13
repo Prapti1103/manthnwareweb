@@ -4,7 +4,7 @@ const contactData = {
   phone: "+91 9130093832, +91 9130093830",
 
   facebook:
-    "https://www.facebook.com/manthanwelfarefoundation0",
+    "https://www.facebook.com/sankalpwelfarefoundation0",
 };
 
 export default contactData;
