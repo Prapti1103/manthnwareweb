@@ -15,6 +15,9 @@ import StudentLogin from "./components/pages/login/studentlogin";
 import SchoolLogin from "./components/pages/login/schoollogin";
 import CoordinatorLogin from "./components/pages/login/coordinator";
 
+import Vision from "./components/pages/about/Vision";
+import Values from "./components/pages/about/Values";
+
 function Home() {
   return (
     <>
@@ -41,6 +44,9 @@ function App() {
         <Route path="/studentlogin" element={<StudentLogin />} />
         <Route path="/schoollogin" element={<SchoolLogin />} />
         <Route path="/coordinatorlogin" element={<CoordinatorLogin />} />
+
+        <Route path="/Vision" element={<Vision />} />
+        <Route path="/Values" element={<Values />} />
       </Routes>
 
       <Footer />
