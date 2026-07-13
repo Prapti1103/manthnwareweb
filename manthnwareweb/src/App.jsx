@@ -25,6 +25,7 @@ function Home() {
       <Features />
       <DiscoverMore />
       <Contact />
+      
     </>
   );
 }
